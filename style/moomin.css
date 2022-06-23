@@ -58,12 +58,43 @@
 
 @media (max-width: 1900px) {
     .slide {
-        height: 50vh;
+        height: 80vh;
     }
 }
 
 @media (max-width: 1300px) {
     .slide {
-        height: 35vh;
+        height: 400px;
+    }
+}
+
+@media (max-width: 900px) {
+    .slide {
+        height: 300px;
+    }
+
+    .moomin_title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 900px) {
+    .slide {
+        height: 250px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .slide {
+        height: 150px
+    }
+
+    .slide h3 {
+        font-size: 10px;
+    }
+
+    .moomin_title {
+        font-size: 24px;
     }
 }

@@ -1,130 +1,155 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 .gameHanoe {
-    background-color: #b7faf4;
-    display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0;
+  background-color: #b7faf4;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
 }
 
 .row {
-    display: flex;
-    width: 600px;
-    justify-content: space-between;
-    margin-bottom: 1rem;
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .row_start {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .col-header {
-    width: 150px;
-    box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
-    border-radius: 5px;
-    padding: 0.8rem 1rem;
-    color: rgb(255, 255, 255);
-    border: 2px solid black;
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 5px;
+  padding: 0.8rem 1rem;
+  color: rgb(255, 255, 255);
+  border: 2px solid black;
 }
 
 .item {
-    width: 150px;
-    height: 66px;
-    box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
-    border-radius: 20px;
-    background: #f7f6f7;
-    padding: 0.8rem 1rem;
-    color: #828282;
-    text-align: center;
-    cursor: grab;
+  width: 150px;
+  height: 66px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  color: #828282;
+  text-align: center;
+  cursor: grab;
 }
 
 .item:active {
-    cursor: grabbing;
+  cursor: grabbing;
 }
 
 .placeholder {
-    width: 150px;
-    height: 66px;
+  width: 150px;
+  height: 66px;
 }
 
 .item_stone {
-    width: 100px;
-    height: 60px;
-    margin: 0 auto;
-    background: linear-gradient(90deg, #fdef24 0%, #f5542c 179.25%);
-    color: black;
-    font-size: 14px;
+  width: 100px;
+  height: 60px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #fdef24 0%, #f5542c 179.25%);
+  color: black;
+  font-size: 14px;
 }
 
 .item_stone_two {
-    width: 120px;
-    height: 70px;
-    margin: 0 auto;
-    background: linear-gradient(90deg, #60e95c 0%, #2cfade 100%);
-    color: black;
-    font-size: 14px;
+  width: 120px;
+  height: 70px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #60e95c 0%, #2cfade 100%);
+  color: black;
+  font-size: 14px;
 }
 
 .item_stone_three {
-    width: 140px;
-    height: 80px;
-    margin: 0 auto;
-    background: linear-gradient(90deg, #f86dce 0%, #56c7fc 100%);
-    color: black;
-    font-size: 14px;
-    align-items: center;
-    margin-top: 10px;
+  width: 140px;
+  height: 80px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #f86dce 0%, #56c7fc 100%);
+  color: black;
+  font-size: 14px;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .start {
-    background-color: #f86dce;
-
+  background-color: #f86dce;
 }
 
 .progress {
-    background: linear-gradient(90deg, #60e95c 0%, #2cfade 100%);
+  background: linear-gradient(90deg, #60e95c 0%, #2cfade 100%);
 }
 
 .done {
-    background-color: #f86dce;
+  background-color: #f86dce;
 }
 
 .hold {
-    border: 5px solid rgb(67, 243, 190);
+  border: 5px solid rgb(67, 243, 190);
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .hovered {
-    border-top: 3px solid rgb(99, 218, 182)
+  border-top: 3px solid rgb(99, 218, 182);
 }
 
 .rockOne {
-    width: 60px;
-
+  width: 60px;
 }
 
 .description {
-    margin-top: 40px;
-    width: 600px;
-    border: 3px solid pink;
-    background-color: white;
-    padding: 30px;
-    line-height: 20px;
+  margin-top: 40px;
+  width: 600px;
+  border: 3px solid pink;
+  background-color: white;
+  padding: 30px;
+  line-height: 20px;
 }
 
 .description_title {
-    text-align: center;
-    padding-bottom: 20px;
-    margin: 0;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+/* @media (max-width: 685px) {
+    .gameHanoe {
+    transform: scale(0.8);
+    align-items: center;
+    margin: 0 auto;
+  }
+} */
+
+@media (max-width: 400px) {
+  .gameHanoe {
+    /* transform: scale(0.8); */
+    zoom: 0.45;
+    width: 100%;
+   
+    /* height: 150px;
+    margin-top: 20px; */
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .hanoe_container {
+    width: 100%;
+  }
+
+
 }
